@@ -1,1 +1,2 @@
 I am adding changes to change.txt, thus changed my own copy of repository
+I am changing it through online repository
