@@ -1,2 +1,41 @@
-I am adding changes to change.txt, thus changed my own copy of repository
-I am changing it through online repository
+Document Title: Introduction to Git and GitHub
+
+1. Git Overview
+Git is a version control system used for saving the history of a project. It allows us to track changes made to files and folders, view previous versions, and identify who made specific changes. Git provides features for managing project history effectively.
+
+2. Key Concepts
+- Repository: A folder where all changes to a project are saved. It serves as a centralized location for tracking project history.
+- Commit: A commit represents a specific snapshot of the project at a given point in time. It captures changes made to files and folders.
+- Branch: A separate line of development within a repository. It allows for the isolation of new features or changes before merging them into the main branch.
+- Remote: A remote refers to a version of the repository hosted on a server, such as GitHub, GitLab, or Bitbucket.
+
+3. Git Commands
+- Initializing a Git Repository:
+  - To start tracking changes in a project folder, use the command: `git init`.
+- Tracking Changes:
+  - Add untracked files to the staging area using: `git add .` (to add all files) or `git add <filename>` (to add specific files).
+  - Commit changes to the repository with a descriptive message: `git commit -m "Commit message"`.
+- Viewing and Managing Changes:
+  - Check the status of the repository: `git status`.
+  - View the project's commit history: `git log`.
+  - Undo staged changes: `git restore --staged <filename>`.
+  - Remove files: `rm -rf <filename>` (for local files) or `git rm <filename>` (for tracked files).
+- Working with Remote Repositories:
+  - Link a local repository to a remote repository: `git remote add origin <remote_url>`.
+  - Push changes to a remote repository: `git push origin <branch_name>`.
+  - Pull changes from a remote repository: `git pull origin <branch_name>`.
+
+4. GitHub and Collaboration
+GitHub is a popular platform for hosting Git repositories and enables collaboration among developers. Key points to note include:
+- Forking a Repository: You can create a personal copy (fork) of a project hosted on GitHub to make changes independently.
+- Pull Requests: When you want to contribute changes to the original repository, you submit a pull request. This allows the project owner to review and merge your changes.
+- Managing Branches: It is recommended to create separate branches for each feature or change to maintain a clean and organized history.
+- Resolving Merge Conflicts: If multiple contributors make changes to the same lines of code, merge conflicts may occur. These conflicts need to be manually resolved by carefully combining the changes.
+
+5. Additional Git Operations
+- Stashing Changes: Temporarily save unsaved changes without committing using `git stash`. Changes can later be reapplied with `git stash pop`.
+- Reverting Commits: If you need to undo specific commits, you can use `git reset <commit_id>`. This action removes the commits after the specified one.
+- Squashing Commits: Combine multiple commits into a single commit using `git rebase -i <commit_id>`. Squashing commits helps maintain a cleaner commit history.
+
+Remember to refer to the official Git documentation for detailed explanations and additional commands.
+
